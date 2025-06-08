@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Add_book</class>
+ <widget class="QMainWindow" name="Add_book">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>LibSys</string>
+  </property>
+  <property name="windowIcon">
+   <iconset theme="QIcon::ThemeIcon::UserAvailable"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>60</y>
+      <width>331</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <pointsize>21</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Dodaj książkę</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>330</y>
+      <width>97</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Autor</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>330</y>
+      <width>97</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Wydawnictwo</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>330</y>
+      <width>98</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Data wydania</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>330</y>
+      <width>97</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Tytuł</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>120</y>
+      <width>271</width>
+      <height>391</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QSplitter" name="splitter">
+       <property name="orientation">
+        <enum>Qt::Orientation::Horizontal</enum>
+       </property>
+       <widget class="QLabel" name="label">
+        <property name="font">
+         <font>
+          <family>Verdana</family>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Tytuł</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="book_title">
+        <property name="placeholderText">
+         <string>Tytuł</string>
+        </property>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSplitter" name="splitter_2">
+       <property name="orientation">
+        <enum>Qt::Orientation::Horizontal</enum>
+       </property>
+       <widget class="QLabel" name="label_2">
+        <property name="font">
+         <font>
+          <family>Verdana</family>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Autor</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="book_author">
+        <property name="placeholderText">
+         <string>Autor</string>
+        </property>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSplitter" name="splitter_3">
+       <property name="orientation">
+        <enum>Qt::Orientation::Horizontal</enum>
+       </property>
+       <widget class="QLabel" name="label_3">
+        <property name="font">
+         <font>
+          <family>Verdana</family>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Wydawnictwo</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="book_publisher">
+        <property name="placeholderText">
+         <string>Wydawnictwo</string>
+        </property>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSplitter" name="splitter_4">
+       <property name="orientation">
+        <enum>Qt::Orientation::Horizontal</enum>
+       </property>
+       <widget class="QLabel" name="label_4">
+        <property name="font">
+         <font>
+          <family>Verdana</family>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Data wydania</string>
+        </property>
+       </widget>
+       <widget class="QDateEdit" name="book_publish_date"/>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="book_available">
+       <property name="acceptDrops">
+        <bool>false</bool>
+       </property>
+       <property name="autoFillBackground">
+        <bool>true</bool>
+       </property>
+       <property name="text">
+        <string>dostępna</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="book_add_book">
+       <property name="text">
+        <string>Dodaj książkę</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>70</y>
+      <width>501</width>
+      <height>441</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QTableView" name="book_table_view">
+       <property name="font">
+        <font>
+         <family>Verdana</family>
+        </font>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="book_delete_button">
+       <property name="font">
+        <font>
+         <family>Verdana</family>
+        </font>
+       </property>
+       <property name="text">
+        <string>Usuń</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="book_toggle_button">
+       <property name="font">
+        <font>
+         <family>Verdana</family>
+        </font>
+       </property>
+       <property name="text">
+        <string>Zmień dostępność</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
