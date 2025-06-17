@@ -23,7 +23,7 @@ protected:
 private slots:
     void on_pushButton_add_client_clicked();
     void on_pushButton_add_book_clicked();
-    void on_pushButton_add_client_2_clicked();  // Przycisk do otwarcia Add_book
+    void on_pushButton_add_client_2_clicked();
     void on_pushButton_add_loan_clicked();
     void on_pushButton_return_book_clicked();
 
